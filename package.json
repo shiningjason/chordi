@@ -1,0 +1,22 @@
+{
+  "name": "chordify-in-telegram",
+  "version": "1.0.0",
+  "author": "Jason Chung <shiningjason1989@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "micro",
+    "deploy": "now && now alias"
+  },
+  "now": {
+    "alias": "chordify-in-telegram",
+    "env": {
+      "NODE_ENV": "production",
+      "CHORDIFY_BOT_TELEGRAM_TOKEN": "@chordify-bot-telegram-token"
+    },
+    "public": true
+  },
+  "dependencies": {
+    "micro": "^9.1.4",
+    "node-fetch": "^2.1.2"
+  }
+}
